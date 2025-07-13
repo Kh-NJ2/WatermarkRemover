@@ -4,11 +4,11 @@ import numpy as np
 import os
 
 
-def convert(path, dpi=68):
+def convert(path, dpi):
     """Convert PDF to PNG images"""
     try:
         # Remove hardcoded poppler path - let it use system PATH
-        images = convert_from_path(path, dpi=dpi)
+        images = convert_from_path(path, dpi)
         
         for i, image in enumerate(images):
             filename = f"page_{i}.png"
@@ -116,10 +116,10 @@ def main():
         
         if choice == "1":
             path = input("Enter the path of the PDF: ").strip()
-            dpi = int(input("Enter desrired dpi (default:68): "))
+            dpi = int(input("Enter desrired dpi (default:300): "))
             if os.path.exists(path):
                 if not dpi:  # If user just pressed Enter
-                    dpi = 68
+                    dpi = 300
                 else:
                     convert(path, dpi)
             else:
