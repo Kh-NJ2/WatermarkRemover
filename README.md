@@ -1,6 +1,8 @@
 # **PDF Watermark Removal Tool**
 A Python-based tool for converting PDF files to images and removing image-based watermarks using OpenCV template matching and inpainting techniques.
 
+<br>
+
 ## Features
 
 - PDF to Image Conversion: Convert PDF files to high-quality PNG images
@@ -9,6 +11,7 @@ A Python-based tool for converting PDF files to images and removing image-based 
 - Interactive CLI: User-friendly command-line interface with menu options
 - Configurable Settings: Adjustable DPI and detection threshold
 - Multiple Watermark Support: Detect and remove multiple instances of the same watermark
+<br>
 
 ## Dependencies
 
@@ -31,11 +34,12 @@ A Python-based tool for converting PDF files to images and removing image-based 
     sudo yum install poppler-utils 
     ```
 - Python Dependencies:
-```bash
-pip install pdf2image opencv-python numpy
-```
+  ```bash
+  pip install pdf2image opencv-python numpy
+  ```
+<br>
 
 ## Running the Program
 ```bash
-python watermark_remover.py
+python watermark_tool.py
 ```
